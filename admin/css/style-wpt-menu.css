@@ -1,0 +1,61 @@
+/* Základní stylování pro hlavní menu a podmenu */
+#adminmenu .toplevel_page_wptech-translate .wp-menu-name {
+    color: #8EE4CB !important; /* Změna barvy textu v menu */
+    font-weight: bold; /* Tučné písmo pro lepší viditelnost */
+    padding-left: 10px; /* Přidání odsazení pro vizuální vylepšení */
+    display: flex; /* Použití flexboxu pro lepší zarovnání textu a ikony */
+    align-items: center; /* Vertikální centrování textu a ikony */
+}
+
+/* Animace pro ikonu menu */
+@keyframes wptech-pulse {
+    0% {
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2);
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        transform: scale(1);
+        filter: hue-rotate(360deg);
+    }
+}
+
+#adminmenu .toplevel_page_wptech-translate .wp-menu-image img {
+    animation: wptech-pulse 1.5s infinite; /* Přidání plynulé animace na ikonu */
+    border-radius: 50%; /* Zaoblení ikony pro moderní vzhled */
+    margin: 5px; /* Přidání odsazení kolem ikony */
+    display: inline-block; /* Zajištění, že ikona je vedle textu */
+    margin-right: 10px; /* Přidání prostoru mezi ikonou a textem */
+}
+
+/* Styl pro tlačítka modálního okna */
+.wptech-modal-button {
+    padding: 10px 20px; /* Odsazení v tlačítkách */
+    margin: 0 10px; /* Mezera mezi tlačítky */
+    cursor: pointer; /* Ukazatel ruky při najetí myši */
+    border-radius: 5px; /* Zaoblení rohů tlačítek */
+    transition: background-color 0.3s ease; /* Přechod pro barvu pozadí */
+}
+
+.wptech-modal-button-primary {
+    background-color: #0073aa; /* Primární barva tlačítka */
+    color: #fff; /* Barva textu */
+    border: none; /* Bez okraje */
+}
+
+.wptech-modal-button-primary:hover {
+    background-color: #005c85; /* Tmavší odstín při hoveru */
+}
+
+.wptech-modal-button-secondary {
+    background-color: #f1f1f1; /* Sekundární barva tlačítka */
+    color: #000; /* Barva textu */
+    border: none; /* Bez okraje */
+}
+
+.wptech-modal-button-secondary:hover {
+    background-color: #ddd; /* Světlejší odstín při hoveru */
+}

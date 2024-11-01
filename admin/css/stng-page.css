@@ -1,0 +1,111 @@
+/* Základní nastavení pro stránku */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontální centrování obsahu */
+    align-items: center; /* Vertikální centrování obsahu */
+    min-height: 100vh; /* Zajišťuje, že stránka pokrývá celou výšku */
+}
+
+.wptech_translate-wrap {
+    max-width: 1200px; /* Trochu širší kontejner pro více obsahu */
+    width: 90%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center; /* Centrovat text uvnitř kontejneru */
+    margin: 0 auto; /* Centrovat horizontálně */
+}
+
+.wptech_translate-wrap:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #0073aa;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center; /* Centrovat text nadpisu */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center; /* Centrovat každou položku v gridu */
+    margin-bottom: 40px; /* Přidání spodního okraje pro lepší rozestup */
+    max-width: 100%; /* Zajištění, že grid nezpůsobí přeplnění */
+}
+
+.grid-container label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #555;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%; /* Zajišťuje plnou šířku uvnitř sloupce */
+    box-sizing: border-box;
+    height: 60px; /* Nastavení výšky pro konzistentní vzhled */
+}
+
+.grid-container label:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container label input {
+    margin-right: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.submit {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px; /* Přidání horního okraje pro oddělení od formuláře */
+    width: auto; /* Nastavení šířky tlačítka na automatickou */
+}
+
+.submit:hover {
+    background-color: #005f8a;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0073aa;
+    color: #ffffff;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}

@@ -1,0 +1,107 @@
+/* admin/css/wptt-changelog.css */
+
+/* Celkový styl kontejneru changelogu */
+.changelog-wrap {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styl nadpisu changelogu */
+.changelog-wrap h1 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styl pro karty jednotlivých verzí */
+.changelog-card {
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.changelog-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styl pro verze */
+.changelog-version {
+    font-size: 24px;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.changelog-version-icon {
+    margin-right: 10px;
+    font-size: 28px;
+    color: #0056b3;
+}
+
+/* Styl pro seznam změn */
+.changelog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.8;
+}
+
+.changelog-list li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Styl pro odrážky seznamu - ikony */
+.changelog-list li:before {
+    content: '✔'; /* Change this to a specific icon if desired */
+    position: absolute;
+    left: 0;
+    color: #0073aa;
+    font-size: 18px;
+    top: 2px;
+}
+
+/* Typ změn */
+.changelog-new-feature:before {
+    content: '🆕'; /* Ikona pro nové funkce */
+}
+
+.changelog-improvement:before {
+    content: '🔧'; /* Ikona pro vylepšení */
+}
+
+.changelog-bug-fix:before {
+    content: '🐞'; /* Ikona pro opravy */
+}
+
+/* Styl pro text popisující změny */
+.changelog-text {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.changelog-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.changelog-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}

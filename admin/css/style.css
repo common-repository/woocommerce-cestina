@@ -1,0 +1,111 @@
+.wpt_style-wrap {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.wpt_style-dashboard-header {
+    background-color: #0073aa;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.wpt_style-header-greeting h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.wpt_style-dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wpt_style-content-left, .wpt_style-content-right {
+    width: 48%;
+}
+.wpt_style-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.wpt_style-card h3 {
+    margin-top: 0;
+    color: #0073aa;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.wpt_style-plugin-info, .wpt_style-overview-chart, .wpt_style-activity-chart {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.wpt_style-calendar {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.wpt_style-ul {
+    padding-left: 20px;
+}
+.wpt_style-ul li {
+    list-style-type: disc;
+}
+.wpt_style-span {
+    display: block;
+    margin-bottom: 5px;
+}
+.wpt_style-button {
+    display: inline-block;
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 10px 5px 0;
+    font-size: 14px;
+}
+.wpt_style-button:hover {
+    background-color: #005f8d;
+    text-decoration: none;
+    color: white;
+}
+/* Styl pro switch (checkbox) */
+.wpt_style-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.wpt_style-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.wpt_style-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.wpt_style-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .wpt_style-slider {
+    background-color: #0073aa;
+}
+input:checked + .wpt_style-slider:before {
+    transform: translateX(26px);
+}
